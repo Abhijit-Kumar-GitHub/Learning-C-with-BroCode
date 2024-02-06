@@ -31,7 +31,7 @@ int main(){
     printf("%s", string1);
     // printf("%s", string2);
 
-    printf("\n%d", result);
+    //printf("\n%d", result);
 
     return 0;
 }
