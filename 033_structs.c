@@ -20,13 +20,15 @@ int main(){
     //          VERY SIMILAR to classes in other languages (but NO METHODS)
 
     struct Player player1;
-    struct Player player2;
+    struct Player player2 = {"Abhijt", 5};      // second way of assigning values to struct.
 
     strcpy(player1.name, "Broo");   // since a string gotta use strcpy
     player1.score = 4;
 
-    strcpy(player2.name, "Abhijit");
-    player2.score = 5;
+    // strcpy(player2.name, "Abhijit");
+    // player2.score = 5;
+
+
 
     printf("%s's score is %d.\n", player1.name, player1.score);
     printf("%s's score is %d.\n", player2.name, player2.score);
