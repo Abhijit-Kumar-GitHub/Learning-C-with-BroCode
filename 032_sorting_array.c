@@ -4,7 +4,7 @@
 
 // for character array just use correct data type and format specifier, rest remains same
 
-void sortArray(int[], int);             // function prototype
+void sortArray(int[], int);             // function prototypes
 void printArray(int[], int);
 
 
