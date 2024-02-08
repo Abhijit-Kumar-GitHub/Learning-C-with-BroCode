@@ -1,19 +1,31 @@
+
+
+
 #include <stdio.h>
 
 int main() {
-    // Define an anonymous struct
-    struct {
-        int x;
-        int y;
-    } point; // Declare a variable of the anonymous struct type
+    char ch;
 
-    // Initialize values for the struct members
-    point.x = 10;
-    point.y = 20;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
 
-    // Access and print the values of the struct members
-    printf("x = %d, y = %d\n", point.x, point.y);
+    if ((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122)) {                    // to check for alphabet
+        printf("%c is an alphabet.\n", ch);
+        if ( ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U'){
+            printf("%c is a vowel",ch);
+        }
+        else{
+            printf("%c is a consonent",ch);
+        }
+    }
+
+    else if (ch >= 48 && ch <= 57) {                                      // to check for digits
+        printf("%c is a digit.\n", ch);
+    }
+   
+    else {
+        printf("%c is a special character.\n", ch);
+    }
 
     return 0;
 }
-
